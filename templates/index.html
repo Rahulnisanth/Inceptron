@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Inceptron's - Hackathon 2k23</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/SIET logo.png') }}" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+      <div id="logo" class="me-auto">
+        <a href="#hero" class="scrollto">
+          <h2>Ince<span style="color: #7862f8;">p</span>tron</h2>
+          <img src="static/img/inceptron - Copy.png" alt="">
+        </a>
+      </div>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#problem-statements">Problem Statements</a></li>
+          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+          <li><a class="nav-link scrollto" href="#venue">Rules</a></li>
+        </ul>
+        <i class="bi bi-text-right mobile-nav-toggle" style="color: #c8f560;"></i>
+      </nav><!-- .navbar -->
+      <a class="buy-tickets scrollto" href="#contact">Register</a>
+    </div>
+  </header><!-- End Header -->
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <ul class=flashes>
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endwith %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <img id="logistic" src="static\img\SIET logo.png" alt="" title="">
+      <h1 class="mb-4 pb-0">Inceptron's Internal<br><span>Hackathon</span> 2023</h1>
+      <p class="mb-4 pb-0">Organized by Department of Computer Science Engineering, SIET.</p>
+      <a href="#about" class="about-btn scrollto">About The Event</a>
+    </div>
+  </section><!-- End Hero Section -->
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container position-relative" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-5 px-5">
+            <h2>About the Hackathon</h2>
+            <p>This internal event invites students from all disciplines to collaborate, innovate, and compete. Join
+              forces with peers, engage in workshops with industry experts, and showcase your inventive solutions for a
+              chance to win exciting prizes. Unleash your creativity and make lasting connections.</p>
+          </div>
+          <div class="col-lg-3 ms-4 pt-3">
+            <h3>Organized by </h3>
+            <p>The Club Inceptron,<br>From the Department of <br> Computer Science Engineering,<br>SIET.</p>
+          </div>
+          <div class="col-lg-3 ms-4 pt-3">
+            <h3>Timeline</h3>
+            <p>STARTING:<br>1 December 2023<br>
+              ENDING:<br>20 December 2023</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= theme Section ======= -->
+    <section id="problem-statements" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header mt-5">
+          <h2>Problem statements</h2>
+          <p>Here is the list of problem statements </p>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item">
+            <a class="nav-link active" href="#theme-1" role="tab" data-bs-toggle="tab">AI + ML + DS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#theme-2" role="tab" data-bs-toggle="tab">Automation + IOT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#theme-3" role="tab" data-bs-toggle="tab">Blockchain + Cyber</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#theme-4" role="tab" data-bs-toggle="tab">Game + Web + Android</a>
+          </li>
+        </ul>
+
+        <h3 class="sub-heading">Problem statements articulate specific challenges or issues that require solutions,
+          serving as the foundation for problem-solving activities.</h3>
+
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- THEME-1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="theme-1">
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T0PS1</div>
+              <div class="col-md-10">
+                <h4 data-id="T0PS1" data-title="1"> Smart Agriculture and Crop Management</h4>
+                <p>Develop a solution that integrates AI, IoT, and data analytics for smart agriculture, including crop
+                  monitoring, irrigation optimization, and pest control.</p>
+              </div>
+            </div>
+
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T0PS2</div>
+              <div class="col-md-10">
+                <h4 data-id="T0PS2" data-title="2">Cross-Cultural Communication Assistant</h4>
+                <p>Implement an AI-based communication tool that assists users in overcoming language and cultural
+                  barriers, promoting effective communication in diverse settings.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T0PS3</div>
+              <div class="col-md-10">
+                <h4 data-id="T0PS3" data-title="3">AI-Enhanced Handwritten Document Analysis and Information Extraction
+                  System for Law Enforcement</h4>
+                <p>Converting hand written documents as scanned images or photos (in any format) to legible text
+                  document using AI extracting important and critical information into database.Software should all
+                  documents formats of handwritten documents and would convert them in legible text. The analytical
+                  tools would be used to identify the critical information available on the documents and would be
+                  stored along with identity of documents, crime number ((Thus linking it with all the attributes of the
+                  crime through this primary key), identify of document, authorship and other attributes): 1.
+                  Investigation Leads would be identified and would be pushed to Investigation Officer, Volunteers,
+                  Observers or the stakeholders as the case may be 2. Evidences would be saved with # value along with
+                  who would prove it in court. Certificate of legal admissibility, relevance and integrity would be
+                  provided. Certificates under 65 B would be auto generated to certify the process and authenticity</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T0PS4</div>
+              <div class="col-md-10">
+                <h4 data-id="T0PS4" data-title="4">Advanced fake news detection system</h4>
+                <p>Design and develop a technological solution/software tool for Tracking & Tracing Fake News and its
+                  origin using official sources as the input filter. The solution should have a mechanism to mitigate
+                  the impact of the spread of Fake News by auto-populating the fake news spreaders.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T0PS5</div>
+              <div class="col-md-10">
+                <h4 data-id="T0PS5" data-title="5">Phishing Detection solution</h4>
+                <p>Design and develop a technological solution for AI-enabled Phishing Links Detection and Alert System.
+                  The solution should be able to identify the source of phishing attacks in web pages, email apps,
+                  social media, instant messenger apps, text messages etc.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T0PS6</div>
+              <div class="col-md-10">
+                <h4 data-id="T0PS6" data-title="6">Dark web crawler</h4>
+                <p>Design and develop an AI-enabled technological solution for actionable Crime Intelligence from the
+                  Deep and Dark Web including but not limited to child abuse, weapons, drugs etc. The solution should
+                  have the capability to raise demands for additional information from clear-net and proprietary
+                  databases viz.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T0PS7</div>
+              <div class="col-md-10">
+                <h4 data-id="T0PS7" data-title="7">Automated Video Surveillance</h4>
+                <p>Implement computer vision algorithms for automated video surveillance, detecting and alerting
+                  authorities about suspicious activities in public spaces.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T0PS8</div>
+              <div class="col-md-10">
+                <h4 data-id="T0PS8" data-title="8">AI driven tutoring system</h4>
+                <p>Create AI-driven tutoring systems that adapt to individual learning styles, providing personalized
+                  assistance to students in various subjects.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T0PS9</div>
+              <div class="col-md-10">
+                <h4 data-id="T0PS9" data-title="9">Data Analytics tools to analyze academic performance</h4>
+                <p>Develop data analytics tools to analyze academic performance trends, helping students and faculty
+                  identify areas for improvement and intervention.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T0PS10</div>
+              <div class="col-md-10">
+                <h4 data-id="T0PS10" data-title="10">Sentiment analysis of Social Media presence</h4>
+                <p>This problem involves developing a sentiment analysis solution specifically designed for analyzing
+                  the sentiment expressed in the social media presence of individuals and organizations. With the
+                  significant impact of social media on personal and organizational reputation, understanding the
+                  sentiment of social media posts, comments, and interactions has become essential for individuals and
+                  businesses alike. Sentiment analysis refers to the process of automatically determining the sentiment
+                  or emotional tone conveyed by text or speech.</p>
+              </div>
+            </div>
+          </div>
+          <!-- THEME-1 -->
+
+          <!-- THEME-2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="theme-2">
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T1PS1</div>
+              <div class="col-md-10">
+                <h4 data-id="T1PS1" data-title="1">Agriculture Management using IoT</h4>
+                <p>Develop a solution that integrates AI, IoT, and data analytics for smart agriculture, including crop
+                  monitoring, irrigation optimization, and pest control.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T1PS2</div>
+              <div class="col-md-10">
+                <h4 data-id="T1PS2" data-title="2">Develop and deploy a Large Language Model (LLM) based tool for
+                  generating human like responses to
+                  natural language inputs for network not connected over internet</h4>
+                <p>LLMs have been released by various entities / research organizations for academic and commercial use.
+                  These models can be used for generating human like responses on text based systems with server-client
+                  model. The objective of the problem is to develop a tool for network not connected to internet with
+                  following basic functions: (a) AI/ML based Text Summarization of given text. (b) Summarization of
+                  Science Technology related documents. (c) Summarization of NEWS papers headlines and editorial pages
+                  for quick overview of specific topics. (d) Reformatting and grammar checks with contextual integrity.
+                  (e) Additional capabilities which the developer can incorporate based on features available in open
+                  source LLM models. The solutions shall be graded on the capabilities, ease of use, flexibility and
+                  scalability of deployment and number of compatible models.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T1PS3</div>
+              <div class="col-md-10">
+                <h4 data-id="T1PS3" data-title="3">Tool for monitoring ground person</h4>
+                <p>Platform/tool to remotely track police officers deployed to bandobast duty using NFC(Near Field
+                  Communication)to ensure that they stay where they are posted.</p>
+              </div>
+            </div>
+          </div>
+          <!-- THEME-2-->
+          <!-- THEME-3 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="theme-3">
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T2PS1</div>
+              <div class="col-md-10">
+                <h4 data-id="T2PS1" data-title="1">Citizen safety app for protection against cybercrimes</h4>
+                <p>Developing an App to flag malicious/ fraud indicators in real-time.Mobile Number, SMS Headers, URL
+                  Links, UPI addresses, Bit coin Wallet Address, SMS Templates</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T2PS2</div>
+              <div class="col-md-10">
+                <h4 data-id="T2PS2" data-title="2">Develop innovative solutions for the enhancement of infrastructure of
+                  college</h4>
+                <p>Develop innovative solutions to enhance the cybersecurity infrastructure of the college. This could
+                  involve creating tools to detect and prevent cyber threats, ensuring data privacy, or educating users
+                  about online security.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T2PS3</div>
+              <div class="col-md-10">
+                <h4 data-id="T2PS3" data-title="3">Indigeneous crypto currency Investigation tool</h4>
+                <p>Indigenous technological Crypto Currency Investigation Tools with multi-blockchain platform support.
+                </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T2PS4</div>
+              <div class="col-md-10">
+                <h4 data-id="T2PS4" data-title="4">Citizen safety app for protection against cybercrimes</h4>
+                <p>Developing an App to flag malicious/ fraud indicators in real-time.Mobile Number, SMS Headers, URL
+                  Links, UPI addresses, Bit coin Wallet Address, SMS Templates</p>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2">T2PS5</div>
+              <div class="col-md-10">
+                <h4 data-id="T2PS5" data-title="5">Fake Social Media Profile detection and reporting</h4>
+                <p>The social life of everyone has become associated with the online social net works. These sites have
+                  made a drastic change in the way we pursue our social life. Making friends and keeping in contact with
+                  them and their updates has become easier. But with their rapid growth, many problems like fake
+                  profiles, online impersonation have also grown. Fake profiles often spam legitimate users, posting
+                  inappropriate or illegal content. Several signs can help you spot a social media fake who might be
+                  trying to scam your business. Identifying fake social media profiles and taking corrective measures.
+                  Expected Output: An Application software that detects the fake social media profile Users: Crime
+                  branch and other investigative agencies</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T2PS6</div>
+              <div class="col-md-10">
+                <h4 data-id="T2PS6" data-title="6">Developing a Blockchain-Based eVault for Legal Records</h4>
+                <p>This hackathon aims to create a blockchain-based eVault system for legal records, ensuring security,
+                  transparency, and accessibility. The system, built on platforms like Ethereum or Hyperledger, will
+                  utilize smart contracts for access management. Key features include user-friendly interfaces, privacy
+                  measures, seamless integration with existing legal databases, and scalability. The expected outcomes
+                  encompass a functional prototype, a comprehensive design document, a business plan detailing potential
+                  impact and revenue models, and a presentation of the developed system. The envisioned impact includes
+                  improved access to justice in India through faster court proceedings, reduced costs, enhanced data
+                  integrity, and increased trust in the legal system.</p>
+              </div>
+            </div>
+          </div>
+          <!-- THEME-3-->
+          <!-- THEME-4-->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="theme-4">
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T3PS1</div>
+              <div class="col-md-10">
+                <h4 data-id="T3PS1" data-title="1">Parking & transportation management system</h4>
+                <p>Propose solutions to improve transportation on campus. This could involve smart parking systems,
+                  ride-sharing platforms, or apps that provide real-time information about public transportation.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T3PS2</div>
+              <div class="col-md-10">
+                <h4 data-id="T3PS2" data-title="2">Monitoring carbon footprint</h4>
+                <p>Create an engaging software app to educate consumers about carbon emissions and incentivize reduction
+                  efforts through gamification. The app aims to make learning about major contributors to carbon
+                  footprints enjoyable, encouraging individuals and families to adopt eco-friendly practices, with
+                  potential for government or corporate incentives for low carbon emitters once widespread adoption
+                  occurs.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T3PS3</div>
+              <div class="col-md-10">
+                <h4 data-id="T3PS3" data-title="3">Develop applications or platforms that enhance the learning
+                  experience.</h4>
+                <p>Create applications or platforms that enhance the learning experience. This could involve virtual
+                  classrooms, interactive study tools, or personalized learning platforms.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T3PS4</div>
+              <div class="col-md-10">
+                <h4 data-id="T3PS4" data-title="4">Alumni Tracking System</h4>
+                <p>Create an Alumni Tracking System to enhance and streamline communication and engagement with
+                  graduates. The system should feature a user-friendly interface allowing alumni to update their
+                  information, share professional achievements, and connect with each other.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T3PS5</div>
+              <div class="col-md-10">
+                <h4 data-id="T3PS5" data-title="5">Smart Campus Navigation</h4>
+                <p>Navigating a university campus, especially for newcomers or individuals unfamiliar with the layout,
+                  can be a challenging and time-consuming task. To address this issue, we aim to develop a comprehensive
+                  solution—a dynamic and interactive map of the university that not only covers outdoor spaces but also
+                  includes detailed indoor maps for efficient location tracking within buildings.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T3PS6</div>
+              <div class="col-md-10">
+                <h4 data-id="T3PS6" data-title="6">Obscenity blocker solution</h4>
+                <p>Design and develop a technological solution for identifying and blocking any obscene media
+                  (image/video/audio) at the user’s end. The solution should be able to send alerts to the concerned
+                  nodal agency in case of the spread of such content.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T3PS7</div>
+              <div class="col-md-10">
+                <h4 data-id="T3PS7" data-title="7">New age Women Safety</h4>
+                <p>Design and develop a Women safety app that automatically senses the danger to a mobile user and
+                  triggers an SOS alert with location details based on multimodal data from a mobile device such as
+                  audio, video, image, motion detection etc.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T3PS8</div>
+              <div class="col-md-10">
+                <h4 data-id="T3PS8" data-title="8">Optimizing food recycling</h4>
+                <p>Create a platform connecting food suppliers with local food banks, utilizing data analytics to
+                  optimize rescue routes, minimize transportation costs, and maximize community benefits. The app
+                  focuses on efficient collection and redistribution logistics, ensuring timely transport to prevent
+                  food spoilage, especially for items close to expiry or unconsumed, contributing to a sustainable
+                  effort to address food waste and support those in need.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T3PS9</div>
+              <div class="col-md-10">
+                <h4 data-id="T3PS9" data-title="9">Detection of sea level rising and costal flooding</h4>
+                <p>Develop an engaging web platform or mobile app that improves public awareness of coastal flooding
+                  issues. Integrate GIS data, infrastructure information to provide users and urban planners with
+                  different scenarios of flood risks. Invite users to contribute to data collection and analysis by
+                  reporting flood events, photo sharing or participating in flood risk mapping initiatives.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">T3PS10</div>
+              <div class="col-md-10">
+                <h4 data-id="T3PS10" data-title="10">Online integrated platform for projects taken up by the students of
+                  various universities/colleges
+                </h4>
+                <p>Innovation is the key to betterment of education and students in the Indian universities/colleges put
+                  a lot of efforts on the projects as a part of the academic requirements. If a common knowledge
+                  platform (with a facility for plagiarism) is created to bring all project works taken up at various
+                  levels by the students in Technical / Higher Educational Institutes and Universities throughout the
+                  country, then it will be a great source of knowledge and also will help the student community to take
+                  up unique/innovative project works Summary: An integrated platform should be developed where in all
+                  the universities/Colleges provide information about the projects done by the students. The information
+                  on this platform will help in the peer learning and this will also help in cross functional research
+                  between various universities/colleges. Objective: To develop an online integrated platform for
+                  projects taken up by the students of various universities/colleges.</p>
+              </div>
+            </div>
+          </div>
+          <!-- THEME-4 -->
+        </div>
+      </div>
+    </section><!-- End Schedule Section -->
+
+    <!-- ======= Schedule Section ======= -->
+    <setion id="schedule" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Event Schedule</h2>
+          <p>Here is our event schedule</p>
+        </div>
+
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"> Start: 27/11/2023<br>End: 05/12/2023</div>
+              <div class="col-md-10">
+                <h4>Registration & Getting Started with Project Kickoff</h4>
+                <p>Sign up to kickstart your project journey! Registration opens the door to project initiation and
+                  innovation.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">Start: 06/12/2023<br>End: 10/12/2023</div>
+              <div class="col-md-10">
+
+                <h4>Development and Progress</h4>
+                <p>Advancing and making strides in the project, moving it forward towards completion and
+                  success.Participants can get help from guides.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">Start: 11/12/2023<br>End: 15/12/2023</div>
+              <div class="col-md-10">
+
+                <h4>Midway Checkpoint and Refinement</h4>
+                <p>At the midway checkpoint, teams showcase progress, receive feedback, and refine their projects for
+                  optimal results.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2">Start: 16/12/2023<br>End: 20/12/2023</div>
+              <div class="col-md-10">
+
+                <h4>Finalization and Demo Week</h4>
+                <p>Finalization and Demo Week marks the culmination of innovative projects, as participants refine their
+                  solutions and present the projects.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 1 -->
+        </div>
+      </div>
+    </setion><!-- End Schedule Section -->
+
+    <!-- ======= Venue Section ======= -->
+    <section id="venue">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Rules & Regulations</h2>
+          <p>Every participants are requested to work according to rules & regulations </p>
+        </div>
+
+        <div id="rules" class="container">
+          <ul style="list-style: none;">
+            <li><i class="bi bi-chevron-right"></i>Participants should meet their allocated guides during the first week
+              for project clarification
+              and guidance.</li>
+            <li><i class="bi bi-chevron-right"></i>Submission of Prepared Solution Presentations should be completed by
+              the end of 20 Days.</li>
+            <li><i class="bi bi-chevron-right"></i>Regularly check the communication platform (Whatsapp Group) for
+              announcements and
+              updates.</li>
+            <li><i class="bi bi-chevron-right"></i>Get along with participants to have fun, collaborate, and make the
+              most
+              out of the hackathon
+              experience!</li>
+            <li><i class="bi bi-chevron-right"></i>A Problem Statement can be only chosen by two teams not more than two
+              teams could select the same problem statement.</li>
+          </ul>
+        </div>
+        <div style="padding: 0 0 0 2rem; display: flex; flex-wrap: wrap; align-items: center;justify-content: center;"
+          class="container">
+          {% for key,value in registered_Count.items() %}
+          <h4 style="margin-right: 2rem;">{{key}} | Selected Count : <span>{{value}}</span></h4>
+          {% endfor %}
+        </div>
+      </div>
+      </div>
+    </section><!-- End Venue Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="section-bg">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Register here</h2>
+          <p>Registration should be done by each team leaders, per team only one registration is appreciated and it'll
+            be easier for us to track registrations
+          </p>
+        </div>
+
+        <div class="form form-info">
+          <form action="register" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <input type="text" name="teamName" class="form-control" id="team-name" placeholder="Team Name" required>
+              </div>
+              <div class="form-group col-md-6 mt-3 mt-md-0">
+                <input type="text" name="leaderName" class="form-control" id="leader-name" placeholder="Leader Name"
+                  required>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="form-group col-md-6">
+                <input type="text" name="member1" class="form-control" id="member-1" placeholder="Member Name" required>
+              </div>
+              <div class="form-group col-md-6 mt-3 mt-md-0">
+                <input type="text" name="member2" class="form-control" id="member-2" placeholder="Member Name">
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="form-group col-md-6">
+                <input type="text" name="member3" class="form-control" id="member-3" placeholder="Member Name">
+              </div>
+              <div class="form-group col-md-6 mt-3 mt-md-0">
+                <input type="email" name="leaderEmail" class="form-control" id="leader-email" placeholder="Leader Email"
+                  required>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="form-group col-md-6">
+                <input type="number" name="mobile" class="form-control" id="mobile" placeholder="Leader Mobile"
+                  required>
+              </div>
+              <div class="form-group col-md-6 mt-3 mt-md-0">
+                <input type="text" name="psID" class="form-control" id="ps_id"
+                  placeholder="Problem Statement ID (eg : T0PS1)" oninput="checkPsIdAvailability()" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" name="department" class="form-control"
+                  placeholder="Department & Section (eg : CSE-A / CSE-B / CSE-C)" required>
+              </div>
+            </div>
+
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="problemStatementTitle" id="ps_title" rows="4"
+                placeholder="Problem Statement Title" required></textarea>
+            </div>
+
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your submission has been sent. Thank you!</div>
+            </div>
+
+            <div class="text-center"><button id="submit_btn" type="submit">Confirm Registration</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img src="static/img/inceptron - Copy.png" alt="">
+            <p>Inceptron, where innovation meets precision! Our college's
+              premier technical club is a dynamic hub for
+              aspiring engineers and tech enthusiasts. Join us in exploring cutting-edge technologies, fostering
+              creativity, and transforming ideas into reality.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#schedule">Schedule</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#venue">Rules</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#problem-statements">Problem Statements</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Organizers Team</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.instagram.com/iam_pramoth_/">Pramoth
+                  CSE</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.instagram.com/delfihnalawrence/">Delfihna
+                  CSE</a></li>
+
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.instagram.com/ranjan_.ray._/">Ranjan
+                  CSE</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.instagram.com/colonel_o2/">Rahul Nisanth
+                  CSE</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Sri Shakthi Institute of<br>
+              Engineering & Technology, <br>
+              L&T Bypass,
+              Coimbatore-641062 <br>
+              <strong>Phone:</strong> +91 6374422349<br>
+              <strong>Email:</strong> clubinceptron@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="https://www.siet.ac.in/" class="twitter"><i class="bi bi-google"></i></a>
+              <a href="https://www.instagram.com/lifeatsrishakthi/" class="facebook"><i class="bi bi-box-fill"></i></a>
+              <a href="https://www.instagram.com/inceptron_cse?igshid=OGQ5ZDc2ODk2ZA%3D%3D" class="instagram"><i
+                  class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/school/sri-shakthi-institute-of-engineering-&-technology/"
+                class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- COPYRIGHTS -->
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Inceptron's - Hackathon 2k23</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="http://rahul5junky.pythonanywhere.com/">RahulNisanth, SIET.</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+  <script>
+    function checkPsIdAvailability() {
+      var psIdInput = document.getElementById("ps_id");
+      var psId = psIdInput.value;
+
+      // Assume there's a global array storing registered ps_ids
+      var registered_Count = {{ registered_Count | tojson | safe
+    }};  // Replace this with actual registered ps_ids
+    if (registered_Count[psId] >= 2) {
+      // Disable the input field and display a message
+      psIdInput.setAttribute("disabled", "true");
+      submit_btn.setAttribute("disabled", "true");
+      psIdInput.value = "This problem statement ID is already registered!";
+    } else {
+      // Enable the input field
+      psIdInput.removeAttribute("disabled");
+      console.log("ps id not-found!!");
+    }
+}
+  </script>
+</body>
+
+</html>
