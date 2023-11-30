@@ -910,6 +910,10 @@ h6 {
 
 #venue .container-fluid {
   margin-bottom: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -944,8 +948,15 @@ h6 {
   justify-content: center;
 }
 
+@media (max-width:600px) {
+  #rules {
+    margin-left: -.5rem;
+  }
+
+}
+
 #rules ul i {
-  padding-right: 1rem;
+  padding-right: .4rem;
   color: #C8F560;
   font-size: 18px;
 }
